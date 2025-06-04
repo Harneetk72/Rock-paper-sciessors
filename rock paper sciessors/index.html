@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="game-container" role="main">
+    <div class="scoreboard" aria-label="Scoreboard">
+      <div id="player-score" aria-live="polite" aria-atomic="true">You: 0</div>
+      <div id="computer-score" aria-live="polite" aria-atomic="true">Computer: 0</div>
+    </div>
+
+     <div class="buttons" role="group" aria-label="Choose rock, paper, or scissors">
+      <button class="choice-btn" data-choice="rock" aria-pressed="false">
+        <div class="icon" aria-hidden="true">✊</div>
+        Rock
+      </button>
+      <button class="choice-btn" data-choice="paper" aria-pressed="false">
+        <div class="icon" aria-hidden="true">✋</div>
+        Paper
+      </button>
+      <button class="choice-btn" data-choice="scissors" aria-pressed="false">
+        <div class="icon" aria-hidden="true">✌️</div>
+        Scissors
+      </button>
+    </div>
+
+    <div class="status" >Make your choice to start the game.</div>
+
+    <div class="choices-display">
+      <div class="choice-box" id="player-choice">
+        <h3>Your Choice</h3>
+        <div class="icon-large">?</div>
+      </div>
+      <div class="choice-box" id="computer-choice">
+        <h3>Computer's Choice</h3>
+        <div class="icon-large">?</div>
+      </div>
+    </div>
+
+    <div id="result-message" class="result-message"></div>
+  </div>
+
+  <div class="footer">© 2024 Rock Paper Scissors Game</div>
+  <script src="script.js"></script>
+</body>
+</html>
+
